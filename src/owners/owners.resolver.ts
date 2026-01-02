@@ -19,6 +19,6 @@ export class OwnersResolver {
 
   @Query(returns=> Owner)
   async findOneOwner(@Args('id') id: number): Promise<Owner> {
-    return await this.ownersService.findOne(+id);
+    return await this.ownersService.findOne(id);
   }
 }
